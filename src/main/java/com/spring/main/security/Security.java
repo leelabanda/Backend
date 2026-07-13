@@ -38,7 +38,8 @@ public class Security{
 	                )
 	                .authorizeHttpRequests(auth -> auth
 
-	                        .requestMatchers("/api/auth/**","/api/users/**","/api/dates/**","/api/dashboard/**","/api/persons/**")
+	                        .requestMatchers("/api/auth/login","api/auth/register")
+//	                        		"/api/users/**","/api/dates/**","/api/dashboard/**","/api/persons/**")
 	                        .permitAll()
 
 	                        .anyRequest().authenticated()
