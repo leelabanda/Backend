@@ -1,4 +1,4 @@
-package com.spring.main.security.com.spring.main.security; // Make sure this is scanned by your main app
+package com.spring.main.security; // Make sure this is scanned by your main app
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -40,17 +40,21 @@ public class Security {
 
                 .authorizeHttpRequests(auth -> auth
 
-                        // allow login/register
-                        .requestMatchers("/api/auth/**")
-                        .permitAll()
+                	    .requestMatchers(HttpMethod.POST, "/api/auth/login")
+                	    .permitAll()
 
-                        // allow angular preflight
-                        .requestMatchers(HttpMethod.OPTIONS,"/**")
-                        .permitAll()
+                	    .requestMatchers(HttpMethod.POST, "/api/auth/register")
+                	    .permitAll()
 
-                        .anyRequest()
-                        .authenticated()
-                )
+                	    .requestMatchers(HttpMethod.POST, "/api/auth/forgot-password")
+                	    .permitAll()
+
+                	    .requestMatchers(HttpMethod.OPTIONS,"/**")
+                	    .permitAll()
+
+                	    .anyRequest()
+                	    .authenticated()
+                	)
 
                 .addFilterBefore(
                         jwtAuthenticationFilter,

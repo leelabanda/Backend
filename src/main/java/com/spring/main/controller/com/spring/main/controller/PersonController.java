@@ -27,7 +27,6 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class PersonController {
 	private final IPersonService personService;
-	
 	@GetMapping("/all")
 	public List<Person> getAll() {
 		return personService.getall();

@@ -1,4 +1,4 @@
-package com.spring.main.security.com.spring.main.security;
+package com.spring.main.security;
 
 import java.util.ArrayList;
 
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 import com.spring.main.entity.com.spring.main.entity.UserInfo;
 import com.spring.main.repo.DashBoardRepo;
 import com.spring.main.repo.UserInfoRepo;
-import com.spring.main.security.com.spring.main.security.JwtService;
+import com.spring.main.security.JwtService;
 
 @Service
 public class UserSecurity implements UserDetailsService{

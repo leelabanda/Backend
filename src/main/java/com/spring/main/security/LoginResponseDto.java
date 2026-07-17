@@ -1,4 +1,4 @@
-package com.spring.main.security.com.spring.main.security;
+package com.spring.main.security;
 
 
 import lombok.AllArgsConstructor;
