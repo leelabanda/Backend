@@ -45,7 +45,10 @@ public class AuthenticationController {
 	public String loginPage() {
 		return "Hello Welcome.";
 	}
-
+	@GetMapping("/login/1")
+	public String loginPage1() {
+	    return "Hello Welcome Version 2";
+	}
 	@PostMapping("/login")
 	public LoginResponseDto login(@RequestBody UserInfo request) {
 		System.out.println("Login API called");
