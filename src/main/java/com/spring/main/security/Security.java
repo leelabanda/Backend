@@ -32,7 +32,7 @@ public class Security{
 
 	        return http
 	                .csrf(csrf -> csrf.disable())
-	                .cors(cors -> {})
+	                .csrf(csrf -> csrf.disable())
 	                .sessionManagement(session ->
 	                        session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
 	                )
@@ -53,7 +53,7 @@ public class Security{
 
         CorsConfiguration configuration = new CorsConfiguration();
 
-        configuration.setAllowedOrigins(List.of("http://localhost:57238"));
+        configuration.setAllowedOrigins(List.of("http://localhost:4200/","http://localhost:57238"));
 
         configuration.setAllowedMethods(List.of(
                 "GET",

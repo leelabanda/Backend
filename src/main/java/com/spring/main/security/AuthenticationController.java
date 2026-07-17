@@ -26,7 +26,7 @@ import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:4200/","http://localhost:57238")
 public class AuthenticationController {
 	@Autowired
 	private AuthenticationManager authenticationManager;
