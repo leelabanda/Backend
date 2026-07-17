@@ -51,9 +51,10 @@ public class AuthenticationController {
 		System.out.println("Login API called");
 	    System.out.println("Email = " + request.getEmail());
 	    System.out.println("Password = " + request.getPassword());
+	    System.out.println("BEFORE AUTHENTICATE");
 		Authentication authentication = authenticationManager
 				.authenticate(new UsernamePasswordAuthenticationToken(request.getEmail(), request.getPassword()));
-
+		 System.out.println("AFTER AUTHENTICATE");
 		if (authentication.isAuthenticated()) {
 			UserDetails userDetails=userSecurity.loadUserByUsername(request.getEmail());
 			System.out.println("Login email: " + request.getEmail());
