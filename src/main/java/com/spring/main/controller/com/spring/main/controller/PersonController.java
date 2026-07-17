@@ -22,7 +22,8 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/api/persons")
 @CrossOrigin(origins = {
         "http://localhost:4200",
-        "http://localhost:57238"
+        "http://localhost:57238",
+        "https://leelabanda.github.io"
 })
 @RequiredArgsConstructor
 public class PersonController {

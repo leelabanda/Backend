@@ -17,7 +17,8 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @CrossOrigin(origins = {
         "http://localhost:4200",
-        "http://localhost:57238"
+        "http://localhost:57238",
+        "https://leelabanda.github.io"
 })
 @RequiredArgsConstructor
 public class UserController {

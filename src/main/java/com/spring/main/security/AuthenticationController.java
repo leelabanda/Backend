@@ -27,7 +27,8 @@ import jakarta.servlet.http.HttpServletRequest;
 @RequestMapping("/api/auth")
 @CrossOrigin(origins = {
         "http://localhost:4200",
-        "http://localhost:57238"
+        "http://localhost:57238",
+        "https://leelabanda.github.io"
 })
 public class AuthenticationController {
 	@Autowired
