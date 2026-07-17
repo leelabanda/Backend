@@ -8,8 +8,8 @@ import java.util.Random;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.spring.main.entity.Person;
-import com.spring.main.entity.UserInfo;
+import com.spring.main.entity.com.spring.main.entity.Person;
+import com.spring.main.entity.com.spring.main.entity.UserInfo;
 import com.spring.main.iservice.IUserService;
 import com.spring.main.repo.DashBoardRepo;
 import com.spring.main.repo.PersonRepository;

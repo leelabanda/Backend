@@ -137,7 +137,7 @@ import com.spring.main.dto.DashBoardResponse;
 import com.spring.main.dto.DashResponse;
 import com.spring.main.dto.DateOfBirthDto;
 import com.spring.main.dto.SummaryDto;
-import com.spring.main.entity.Person;
+import com.spring.main.entity.com.spring.main.entity.Person;
 import com.spring.main.iservice.IDashboardService;
 import com.spring.main.repo.DashBoardRepo;
 import com.spring.main.repo.PersonRepository;

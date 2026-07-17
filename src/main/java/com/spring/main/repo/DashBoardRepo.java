@@ -7,8 +7,8 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.spring.main.dto.AniversaryDto;
 import com.spring.main.dto.DateOfBirthDto;
-import com.spring.main.entity.Person;
-import com.spring.main.entity.UserInfo;
+import com.spring.main.entity.com.spring.main.entity.Person;
+import com.spring.main.entity.com.spring.main.entity.UserInfo;
 
 public interface DashBoardRepo extends JpaRepository<Person,Long> {
     @Query("""

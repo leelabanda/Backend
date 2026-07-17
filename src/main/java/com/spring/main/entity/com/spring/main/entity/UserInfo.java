@@ -1,7 +1,4 @@
-package com.spring.main.entity;
-
-import java.time.LocalDate;
-import java.time.MonthDay;
+package com.spring.main.entity.com.spring.main.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,21 +11,16 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Getter
-@Setter
-public class Person {
+public class UserInfo {
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-	private LocalDate dateOfBirth;
-	private LocalDate aniversaryDate;
-	private String relation;
-	private String location;
-	private String city;
-	private String subRelation;
-	
+	private String email;
+	private String password;
 }

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.spring.main.entity.Person;
+import com.spring.main.entity.com.spring.main.entity.Person;
 import com.spring.main.repo.PersonRepository;
 
 import java.io.IOException;

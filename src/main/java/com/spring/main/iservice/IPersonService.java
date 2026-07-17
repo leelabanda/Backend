@@ -2,7 +2,7 @@ package com.spring.main.iservice;
 
 import java.util.List;
 
-import com.spring.main.entity.Person;
+import com.spring.main.entity.com.spring.main.entity.Person;
 
 public interface IPersonService {
 	Person create(Person person);

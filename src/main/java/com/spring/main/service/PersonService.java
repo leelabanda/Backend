@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.spring.main.entity.Person;
+import com.spring.main.entity.com.spring.main.entity.Person;
 import com.spring.main.iservice.IPersonService;
 import com.spring.main.repo.PersonRepository;
 

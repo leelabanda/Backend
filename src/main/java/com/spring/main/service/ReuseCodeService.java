@@ -11,7 +11,7 @@ import com.spring.main.dto.AniversaryDto;
 import com.spring.main.dto.DashResponse;
 import com.spring.main.dto.DateBirthDto;
 import com.spring.main.dto.DateOfBirthDto;
-import com.spring.main.entity.Person;
+import com.spring.main.entity.com.spring.main.entity.Person;
 
 @Service
 public class ReuseCodeService {

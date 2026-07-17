@@ -16,13 +16,10 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.spring.main.entity.UserInfo;
+import com.spring.main.entity.com.spring.main.entity.UserInfo;
 import com.spring.main.iservice.IUserService;
 import com.spring.main.repo.DashBoardRepo;
 import com.spring.main.repo.UserInfoRepo;
-import com.spring.main.security.JwtService;
-import com.spring.main.security.LoginResponseDto;
-import com.spring.main.security.UserSecurity;
 
 import jakarta.servlet.http.HttpServletRequest;
 
