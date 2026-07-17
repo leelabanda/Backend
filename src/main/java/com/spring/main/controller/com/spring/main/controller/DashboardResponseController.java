@@ -14,8 +14,10 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/dates")
 @RequiredArgsConstructor
-
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+        "http://localhost:4200",
+        "http://localhost:57238"
+})
 public class DashboardResponseController {
 	private final IDashboardService dashService;
 	@GetMapping("/get")
