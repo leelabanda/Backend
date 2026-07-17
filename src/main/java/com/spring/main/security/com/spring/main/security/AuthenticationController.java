@@ -1,5 +1,4 @@
-package com.spring.main.security;
-
+package com.spring.main.security.com.spring.main.security;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,12 +20,18 @@ import com.spring.main.entity.UserInfo;
 import com.spring.main.iservice.IUserService;
 import com.spring.main.repo.DashBoardRepo;
 import com.spring.main.repo.UserInfoRepo;
+import com.spring.main.security.JwtService;
+import com.spring.main.security.LoginResponseDto;
+import com.spring.main.security.UserSecurity;
 
 import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:4200/","http://localhost:57238")
+@CrossOrigin(origins = {
+        "http://localhost:4200",
+        "http://localhost:57238"
+})
 public class AuthenticationController {
 	@Autowired
 	private AuthenticationManager authenticationManager;
